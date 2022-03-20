@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📦 -props-
+->表示内容の受け渡しはprops.{プロパティ}を使用する
+->仮想DOMの受け渡しはprops.childrenを使用する
+
+😀 -gitmoji-
+->🎨：構造の変更
+->✨：コンポーネントの作成
+->💄：UIに関する変更/作成
+->🔥：ファイル/ディレクトリの削除
+->🐛：バグの修正
+->♻️：リファクタリング
+->➕：ライブラリのインストール
+->➖：ライブラリのアンインストール
+->🚧：作業中
+->📝：ソースコード以外のドキュメントの更新
+->📸：新しい画像の追加
+
+
+
+
+<!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -31,4 +51,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
