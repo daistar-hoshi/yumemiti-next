@@ -1,7 +1,9 @@
+import MainVisual from "src/components/organisms/section/lp/MainVisual";
+
 export default function Home() {
   return (
     <div>
-      index
+      <MainVisual />
     </div>
   )
 }
