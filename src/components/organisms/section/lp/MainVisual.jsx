@@ -9,11 +9,10 @@ import bgMainVisual from "public/images/background/bgMainVisual.png";
 export default function MainVisual() {
 return (
 <div>
-    <VStack>
+    <VStack py={"10vh"}>
         <Image
             src={bgMainVisual.src}
             alt="bgMainVisual"
-            w={"100%"}
             h={"90%"}
             position={"fixed"}
             zIndex={-1}
@@ -21,6 +20,8 @@ return (
             bgRepeat={"no-repeat"}
             bgPos={"center"}
             objectFit={"cover"}
+            transformOrigin={"center"}
+            transform="scale(2)"
         />
         <Catchcopy />
         <Divider w={"60%"} />

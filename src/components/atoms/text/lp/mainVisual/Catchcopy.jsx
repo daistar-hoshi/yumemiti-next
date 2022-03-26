@@ -6,7 +6,6 @@ return (
     <Heading
         as={"h1"}
         w={"fit-content"}
-        pt={100}
         fontSize={"6xl"}
         lineHeight={"2em"}
         color={"gray.50"}
