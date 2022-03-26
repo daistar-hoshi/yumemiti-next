@@ -5,6 +5,7 @@ import About from "src/components/organisms/section/lp/About";
 import Header from "src/components/organisms/layout/Header";
 import Lecture from "src/components/organisms/section/lp/Lecture";
 import SelectJob from "src/components/organisms/section/lp/SelectJob";
+import Footer from "src/components/organisms/layout/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Box as="section">
         <SelectJob />
       </Box>
+      <Footer />
     </div>
   )
 }
