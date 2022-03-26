@@ -10,8 +10,9 @@ export default function Lecture() {
     return (
         <VStack
             spacing={10}
-            py={"20vh"}
-            bgColor={"rgb(250,250,250)"}
+            py={"10vh"}
+            // bgColor={"white"}
+            bgColor={"rgb(253,253,253)"}
         >
             <SectionTitle />
             <DiagnosisStep 
