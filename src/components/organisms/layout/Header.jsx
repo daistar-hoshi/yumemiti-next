@@ -1,5 +1,4 @@
-import { Flex, Icon } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Flex } from "@chakra-ui/react";
 
 import HeaderButton from "src/components/atoms/button/HeaderButton";
 import HamburgerButton from "src/components/atoms/button/HamburgerButton";

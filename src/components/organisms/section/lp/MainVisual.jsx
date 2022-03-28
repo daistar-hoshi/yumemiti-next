@@ -26,7 +26,7 @@ return (
         <Catchcopy />
         <Divider w={"60%"} />
         <AboutLine />
-        <PrimaryButton text="診断" color="white" />
+        <PrimaryButton text="診断" color="white"/>
     </VStack>
 </div>
 )

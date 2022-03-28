@@ -7,7 +7,7 @@ export default function HamburgerButton() {
             as={HamburgerIcon} 
             alt="menu" 
             boxSize="30px"
-            display={{ base: "flex", md:"none" }}
+            display={"flex"}
         />
     )
 }
