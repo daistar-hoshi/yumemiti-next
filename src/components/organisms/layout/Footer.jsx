@@ -5,10 +5,10 @@ export default function Footer() {
     return (
         <Box as="footer" bg="gray.900" position={"relative"} zIndex={999}>
             <Heading
-                as="h2" 
-                p="30px" 
-                pl="50px"
-                color="blue.500"
+            as="h2" 
+            p="30px" 
+            pl="50px"
+            color="blue.500"
             >
                 Information
             </Heading>

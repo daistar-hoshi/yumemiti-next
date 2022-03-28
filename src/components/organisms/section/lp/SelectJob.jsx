@@ -6,8 +6,8 @@ import SectionTitle from "src/components/atoms/text/lp/selectJob/SectionTitle";
 export default function SelectJob() {
     return (
         <VStack
-            py={"10vh"}
-            bgColor={"rgb(250,250,250)"}
+        py={"10vh"}
+        bgColor={"rgb(250,250,250)"}
         >
             <SectionTitle />
             <HStack spacing={5}>

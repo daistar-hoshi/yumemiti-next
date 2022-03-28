@@ -3,9 +3,9 @@ import { Text } from "@chakra-ui/react";
 export default function AbouLeftText() {
     return (
         <Text 
-            fontSize={"xs"} 
-            lineHeight={10} 
-            color={"gray.600"} 
+        fontSize={"xs"} 
+        lineHeight={10} 
+        color={"gray.600"} 
         >
             Yumemiti は、
             <br />

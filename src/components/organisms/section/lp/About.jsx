@@ -8,9 +8,9 @@ import AbouBottomText from "src/components/atoms/text/lp/about/AboutBottomText";
 export default function AbouLeftText() {
     return (
         <VStack
-            spacing={20}
-            py={"10vh"}
-            bgColor={"rgb(250,250,250)"}
+        spacing={20}
+        py={"10vh"}
+        bgColor={"rgb(250,250,250)"}
         >
             <SectionTitle />
             <HStack spacing={8}>

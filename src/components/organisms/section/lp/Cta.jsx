@@ -9,25 +9,25 @@ import bgCta from "public/images/background/bgCta.png"
 export default function Cta() {
     return (
         <VStack
-            spacing={10}
-            pt={"10vh"}
-            bgColor={"rgb(253,253,253)"}
+        spacing={10}
+        pt={"10vh"}
+        bgColor={"rgb(253,253,253)"}
         >
             <SectionTitle />
             <HStack spacing={6}>
                 <Image
-                    src={yumemitiIcon.src}
-                    alt="yumemiti-icon"
-                    boxSize="80px"
+                src={yumemitiIcon.src}
+                alt="yumemiti-icon"
+                boxSize="80px"
                 />
                 <VStack spacing={6}>
                     <YellText />
                     <Divider />
-                    <PrimaryButton text="診断" color="glay"/>
+                    <PrimaryButton text="診断" color="glay" pass="/question"/>
                 </VStack>
             </HStack>
             <Image
-                src={bgCta.src}
+            src={bgCta.src}
             />
         </VStack>
     )
