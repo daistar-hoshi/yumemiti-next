@@ -10,14 +10,21 @@ export default function OpacityContainer(props) {
         }
         return "0 0 6px 6px";
     }
+    const colorParse = (rounded) => {
+        if(rounded==="top"){
+            return "rgba(0,0,0,0.9)";
+        }
+        return "rgba(255,255,255,0.9)";
+    }
 
     /**run */
     const borderRadius = roundedParse(props.rounded);
+    const bgColor = colorParse(props.rounded);
 
     return(
         <Box
         w={"350px"}
-        bg={"rgba(0,0,0,0.9)"}
+        bg={`${bgColor}`}
         boxShadow={"lg"}
         borderRadius={`${borderRadius}`}
         >
