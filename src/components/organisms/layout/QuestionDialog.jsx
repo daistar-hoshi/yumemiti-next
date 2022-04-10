@@ -10,8 +10,9 @@ import { questionCountState } from "src/store/questionCountState";
 
 export default function QuestionDialog(props) {
     /**Recoil State */
-    const [questionCount, setQuestionCount] = useRecoilState(questionCountState);
+    const [questionCount] = useRecoilState(questionCountState);
 
+    //三項演算子で、5ページ目だけにnext/Linkをつけようとするとエラー（動きはする）
     return(
         <VStack
         spacing={"none"}
@@ -28,18 +29,37 @@ export default function QuestionDialog(props) {
                     m={"auto"}
                     my={8}
                     />
-                    <VStack spacing="1vh">
-                        <QuestionUpperButton
-                        text={props.btnText1}
-                        btnColor={props.btnColor}
-                        onClick={props.onClickUpperButtonInPage}
-                        />
-                        <QuestionLowerButton
-                        text={props.btnText2}
-                        btnColor={props.btnColor}
-                        onClick={props.onClickLowerButtonInPage}
-                        />
-                    </VStack>
+                    {questionCount<5 ?
+                        // true
+                        <VStack spacing="1vh">
+                            <QuestionUpperButton
+                            text={props.btnText1}
+                            btnColor={props.btnColor}
+                            onClick={props.onClickUpperButtonInPage}
+                            />
+                            <QuestionLowerButton
+                            text={props.btnText2}
+                            btnColor={props.btnColor}
+                            onClick={props.onClickLowerButtonInPage}
+                            />
+                        </VStack>
+                        :
+                        // false
+                        <Link href="/result">
+                            <VStack spacing="1vh">
+                                <QuestionUpperButton
+                                text={props.btnText1}
+                                btnColor={props.btnColor}
+                                onClick={props.onClickUpperButtonInPage}
+                                />
+                                <QuestionLowerButton
+                                text={props.btnText2}
+                                btnColor={props.btnColor}
+                                onClick={props.onClickLowerButtonInPage}
+                                />
+                            </VStack>
+                        </Link>
+                    }
                 </VStack>
             </OpacityContainer>
         </VStack>
