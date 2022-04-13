@@ -19,6 +19,15 @@ import { questionCountState } from "src/store/questionCountState";
 
 
 export default function Home() {
+  
+  /** RecoilState */
+  const [questionCount, setQuestionCount] = useRecoilState(questionCountState);
+  const [webEWeight, setWebEWeight] = useRecoilState(webEState);
+  const [aiEWeight, setAiEWeight] = useRecoilState(aiEState);
+  const [appEWeight, setAppEWeight] = useRecoilState(appEState);
+  const [webDWeight, setWebDWeight] = useRecoilState(webDState);
+  const [uxDWeight, setUxDWeight] = useRecoilState(uxDState);
+
   /**func */
   const onClickAnswerButton = () => {
     if(questionCount<5){
@@ -32,11 +41,13 @@ export default function Home() {
     setAiEWeight(aiEWeight+2);
     setAppEWeight(appEWeight+1);
     onClickAnswerButton();
+    console.log("success");
   };
   const onClickLowerButtonInPage1 = () => {
     setWebDWeight(webDWeight+2);
     setUxDWeight(uxDWeight+1);
     onClickAnswerButton();
+    console.log("success");
   };
   
   // page2
@@ -45,11 +56,13 @@ export default function Home() {
     setWebDWeight(webDWeight+2);
     setUxDWeight(uxDWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   const onClickLowerButtonInPage2 = () => {
     setWebEWeight(webEWeight+1);
     setAiEWeight(aiEWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   
   // page3
@@ -58,11 +71,13 @@ export default function Home() {
     setWebDWeight(webDWeight+2);
     setUxDWeight(uxDWeight+1);
     onClickAnswerButton();
+    console.log("success");
   };
   const onClickLowerButtonInPage3 = () => {
     setAiEWeight(aiEWeight+1);
     setAppEWeight(appEWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   
   // page4
@@ -71,11 +86,13 @@ export default function Home() {
     setWebDWeight(webDWeight+1);
     setUxDWeight(uxDWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   const onClickLowerButtonInPage4 = () => {
     setWebEWeight(webEWeight+2);
     setAppEWeight(appEWeight+1);
     onClickAnswerButton();
+    console.log("success");
   };
   
   // page5
@@ -84,11 +101,13 @@ export default function Home() {
     setAiEWeight(aiEWeight+1);
     setAppEWeight(appEWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   const onClickLowerButtonInPage5 = () => {
     setWebDWeight(webDWeight+1);
     setUxDWeight(uxDWeight+2);
     onClickAnswerButton();
+    console.log("success");
   };
   
   /**object */
@@ -144,14 +163,6 @@ export default function Home() {
       onClickLowerButtonInPage: onClickLowerButtonInPage5
     }
   ]
-
-  /** RecoilState */
-  const [questionCount, setQuestionCount] = useRecoilState(questionCountState);
-  const [webEWeight, setWebEWeight] = useRecoilState(webEState);
-  const [aiEWeight, setAiEWeight] = useRecoilState(aiEState);
-  const [appEWeight, setAppEWeight] = useRecoilState(appEState);
-  const [webDWeight, setWebDWeight] = useRecoilState(webDState);
-  const [uxDWeight, setUxDWeight] = useRecoilState(uxDState);
 
   /**state */
   // const [questionCount, setQuestionCount] = useState(1);
