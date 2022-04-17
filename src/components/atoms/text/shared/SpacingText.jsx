@@ -1,6 +1,6 @@
-import { Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react"
 
-export default function QuestionCount(props) {
+export const SpacingText = (props) => {
     return(
         <Text
         p={5}
@@ -9,7 +9,7 @@ export default function QuestionCount(props) {
         fontFamily='Varela Round'
         letterSpacing={10}
         >
-            QUESTION{props.pageCount}/5
+            {props.text}
         </Text>
     )
 }
