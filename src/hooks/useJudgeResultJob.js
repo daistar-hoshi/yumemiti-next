@@ -5,6 +5,11 @@ import { appEState } from "src/store/appEState";
 import { uxDState } from "src/store/uxDState";
 import { webDState } from "src/store/webDState";
 import { webEState } from "src/store/webEState";
+import engineerWeb from "public/images/job/engineerWeb.svg";
+import engineerAi from "public/images/job/engineerAi.svg";
+import engineerApp from "public/images/job/engineerApp.svg";
+import designerWeb from "public/images/job/designerWeb.svg";
+import designerUx from "public/images/job/designerUx.svg";
 
 export const useJudgeResultJob = () => {
 
@@ -19,11 +24,11 @@ export const useJudgeResultJob = () => {
     let judgementJob = null;
     
     const jobArr = [
-        {name: "WEBエンジニア", weight: webEWeight, pass: "/roadmap_engineer_web", imageSrc: engineerWeb, judge: false},
-        {name: "AIエンジニア", weight: aiEWeight, pass: "/roadmap_engineer_ai", imageSrc: engineerAi, judge: false},
-        {name: "APPエンジニア", weight: appEWeight, pass: "/roadmap_engineer_app", imageSrc: engineerApp, judge: false},
-        {name: "WEBデザイナー", weight: webDWeight, pass: "/roadmap_designer_web", imageSrc: designerWeb, judge: false},
-        {name: "UXデザイナー", weight: uxDWeight, pass: "/roadmap_designer_ux", imageSrc: designerUx, judge: false}
+        {name: "WEBエンジニア", weight: webEWeight, pass: "/web-engineer-roadmap", imageSrc: engineerWeb, judge: false},
+        {name: "AIエンジニア", weight: aiEWeight, pass: "/ai-engineer-roadmap", imageSrc: engineerAi, judge: false},
+        {name: "APPエンジニア", weight: appEWeight, pass: "/app-engineer-roadmap", imageSrc: engineerApp, judge: false},
+        {name: "WEBデザイナー", weight: webDWeight, pass: "/web-designer-roadmap", imageSrc: designerWeb, judge: false},
+        {name: "UXデザイナー", weight: uxDWeight, pass: "/ux-designer-roadmap", imageSrc: designerUx, judge: false}
     ]
     
     /** func */
@@ -54,8 +59,6 @@ export const useJudgeResultJob = () => {
         }else{
             judgementJob = matchJobArr[Math.floor(Math.random() * matchJobArr.length)];
         }
-
-
         return judgementJob;
     }
 

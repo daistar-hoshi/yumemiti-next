@@ -12,9 +12,9 @@ export default function OpacityContainer(props) {
     }
     const colorParse = (rounded) => {
         if(rounded==="top"){
-            return "rgba(0,0,0,0.9)";
+            return "rgba(0,0,0,0.8)";
         }
-        return "rgba(255,255,255,0.9)";
+        return "rgba(255,255,255,0.8)";
     }
 
     /**run */
