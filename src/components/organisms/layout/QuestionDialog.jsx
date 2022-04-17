@@ -6,6 +6,7 @@ import QuestionUpperButton from "src/components/atoms/button/QuestionUpperButton
 
 import OpacityContainer from "src/components/atoms/container/OpacityContainer";
 import QuestionCount from "src/components/atoms/text/question/QuestionCount";
+import { QuestionButtons } from "src/components/molecules/QuestionButtons";
 import { questionCountState } from "src/store/questionCountState";
 
 export default function QuestionDialog(props) {
@@ -29,37 +30,7 @@ export default function QuestionDialog(props) {
                     m={"auto"}
                     my={8}
                     />
-                    {questionCount<5 ?
-                        // true
-                        <VStack spacing="1vh">
-                            <QuestionUpperButton
-                            text={props.btnText1}
-                            btnColor={props.btnColor}
-                            onClick={props.onClickUpperButtonInPage}
-                            />
-                            <QuestionLowerButton
-                            text={props.btnText2}
-                            btnColor={props.btnColor}
-                            onClick={props.onClickLowerButtonInPage}
-                            />
-                        </VStack>
-                        :
-                        // false
-                        <Link href="/result">
-                            <VStack spacing="1vh">
-                                <QuestionUpperButton
-                                text={props.btnText1}
-                                btnColor={props.btnColor}
-                                onClick={props.onClickUpperButtonInPage}
-                                />
-                                <QuestionLowerButton
-                                text={props.btnText2}
-                                btnColor={props.btnColor}
-                                onClick={props.onClickLowerButtonInPage}
-                                />
-                            </VStack>
-                        </Link>
-                    }
+                    <QuestionButtons />
                 </VStack>
             </OpacityContainer>
         </VStack>
